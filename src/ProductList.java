@@ -14,7 +14,6 @@ public class ProductList {
             products.add(product);
         }
     }
-
     public void checkProducts(String name) {
         for (Product product : this.products) {
             if (product.getName().equals(name)) {

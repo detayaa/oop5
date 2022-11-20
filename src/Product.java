@@ -6,7 +6,6 @@ public class Product {
     String name;
     private boolean check;
 
-
     public Product(String name, int weight, int cost) {
         if (weight == 0) {
             System.out.println("Вес неккоректен");

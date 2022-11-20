@@ -60,7 +60,7 @@ public class Main {
         while (numbers.size() < 20) {
             numbers.add(random.nextInt(1000));
         }
-        //System.out.println(numbers);
+
         Iterator<Integer> numberIterator = numbers.iterator();
         while (numberIterator.hasNext()){
             int number = numberIterator.next();

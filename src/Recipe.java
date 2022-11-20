@@ -25,7 +25,6 @@ public class Recipe {
         }
         return sum;
     }
-
     public Set<Product> getProducts() {
         return products;
     }

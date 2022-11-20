@@ -11,5 +11,4 @@ public class RecipeList {
             recipes.add(recipe);
         }
     }
-
 }

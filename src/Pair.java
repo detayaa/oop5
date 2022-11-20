@@ -1,6 +1,6 @@
 public class Pair {
-    private final  int first;
-    private final  int second;
+    private final int first;
+    private final int second;
 
     public Pair(int first, int second)
     {
