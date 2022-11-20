@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Passport {
-    int num;
-    String lastName;
-    String name;
-    String middleName;
-    String birth;
+    private final int num;
+    private final String lastName;
+    private final String name;
+    private final String middleName;
+    private final String birth;
 
     public Passport(int num, String lastName, String name, String middleName, String birth) {
         this.num = num;
