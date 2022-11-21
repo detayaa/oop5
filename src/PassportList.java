@@ -8,7 +8,6 @@ public class PassportList {
     public void addPassport(Passport passport) {
         this.passports.add(passport);
     }
-
     public Passport findNumber(int num) {
         for (Passport passport : passports) {
             if (passport.getNum() == num) {

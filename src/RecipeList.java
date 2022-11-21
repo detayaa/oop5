@@ -1,15 +1,15 @@
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
 public class RecipeList {
-    private final Set<Recipe> recipes = new HashSet<>();
+    HashMap<String, Integer> recipes = new HashMap<>();
 
     public void addRecipe(Recipe recipe) {
-        if (recipes.contains(recipe)) {
+        if (recipes.containsKey(recipe)) {
             throw new IllegalArgumentException("Такой рецепт уже есть");
         } else {
-            recipes.add(recipe);
+            recipes.put(recipe.name, recipe.count);
         }
     }
-
 }

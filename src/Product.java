@@ -5,9 +5,17 @@ public class Product {
     int cost;
     String name;
     private boolean check;
+    int count;
 
+    public int getCount() {
+        return count;
+    }
 
-    public Product(String name, int weight, int cost) {
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public Product(String name, int weight, int cost,int count) {
         if (weight == 0) {
             System.out.println("Вес неккоректен");
         } else {
@@ -22,6 +30,11 @@ public class Product {
             throw new IllegalArgumentException("Название не указано");
         } else {
             this.name = name;
+        }
+        if (count == 0) {
+            System.out.println("Количество неккоректно");
+        } else {
+            this.count = count;
         }
     }
 
@@ -78,8 +91,8 @@ public class Product {
     @Override
     public String toString() {
         String checkString = this.isCheck() ? "Yes" : "No";
-        return String.format("%s, цена: %s, количество - %s, куплен: %s",
-        this.name, this.cost, this.weight, checkString);
+        return String.format("%s, цена: %s, вес - %s, куплен: %s, количество %s ",
+        this.name, this.cost, this.weight, checkString, this.count);
 
     }
 }

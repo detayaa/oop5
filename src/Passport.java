@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.Objects;
 
 public class Passport {
-    int num;
-    String lastName;
-    String name;
-    String middleName;
-    String birth;
+    private final int num;
+    private final String lastName;
+    private final String name;
+    private final String middleName;
+    private final String birth;
 
     public Passport(int num, String lastName, String name, String middleName, String birth) {
         this.num = num;
@@ -15,11 +15,12 @@ public class Passport {
         this.middleName = middleName;
         this.birth = birth;
     }
+
     ArrayList<Object> nums = new ArrayList<>();
 
     public void first() {
         for (int i = 0; i < nums.size(); i++) {
-            if ((nums.get(i)).equals (nums.get(i+1))) {
+            if ((nums.get(i)).equals(nums.get(i + 1))) {
                 nums.add(getName());
                 nums.add(getLastName());
                 nums.add(getMiddleName());
@@ -32,7 +33,6 @@ public class Passport {
     public void printFirst() {
         System.out.println(nums);
     }
-
 
 
     public int getNum() {
@@ -63,7 +63,7 @@ public class Passport {
             return false;
         }
         Passport passport = (Passport) o;
-        return Objects.equals(num,passport.num);
+        return Objects.equals(num, passport.num);
     }
 
     @Override
